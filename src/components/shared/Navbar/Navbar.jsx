@@ -97,7 +97,7 @@ const Navbar = () => {
                         role="button"
                         className="btn btn-ghost btn-circle avatar"
                     >
-                        <div className="w-10 rounded-full border border-blue-300 p-1">
+                        <div className="w-10 rounded-full border border-blue-300 p-1 z-20">
                             <img
                                 alt="User Avatar"
                                 className="rounded-full w-full h-full object-cover"
@@ -107,7 +107,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu font-bold border border-blue-500 menu-compact dropdown-content mt-3 p-2 bg-gradient-to-r from-blue-100 via-green-100 to-red-100 shadow-lg rounded-lg w-52"
+                        className="z-20 menu font-bold border border-blue-500 menu-compact dropdown-content mt-3 p-2 bg-gradient-to-r from-blue-100 via-green-100 to-red-100 shadow-lg rounded-lg w-52"
                     >
                         <li>
                             <a className="justify-between">
