@@ -7,34 +7,38 @@ import Footer from "../../components/shared/Footer/Footer";
 const Root = () => {
     return (
         <div className="layout">
-            
+
             {/* Navbar Section */}
-            <header> 
+            <header>
                 <Navbar />
             </header>
 
             {/* Main Content Layout */}
-            <div className="main-content hidden md:flex">
+            <div className="main-content md:flex">
                 {/* Left Panel (Sidebar or Navigation) */}
-                <LeftPanel />
-                
+                <div className=" hidden md:flex">
+                    <LeftPanel />
+                </div>
+
                 {/* Outlet for Main Content */}
-                <div 
-                    className="content" 
-                    style={{ 
-                        flexGrow: 1, 
-                        overflowY: 'auto', 
-                        overflowX: 'hidden', 
-                        padding: '1rem' 
+                <div
+                    className="content"
+                    style={{
+                        flexGrow: 1,
+                        overflowY: 'auto',
+                        overflowX: 'hidden',
+                        padding: '1rem'
                     }}
                 >
                     <Outlet />
                 </div>
 
                 {/* Right Panel (Tasks/Notifications/Other) */}
-                <RightPanel />
+                <div className=" hidden md:flex">
+                    <RightPanel />
+                </div>
             </div>
-            
+
             {/* Footer Section */}
             <footer>
                 <Footer />
